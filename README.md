@@ -1,7 +1,7 @@
 # Projeto de Redes de Computadores 2020.2
 Para rodar a aplicação é necessário que o python esteja instalado.
 
-Baixar a [versão do python](https://www.python.org/downloads/release/python-388/) usada: https://www.python.org/downloads/release/python-388/
+Baixar a versão do python usada: https://www.python.org/downloads/release/python-3112/
 
 No diretório ```game```, usar o comando para instalar as bibliotecas usadas:
 ```
@@ -51,12 +51,18 @@ Nesse exemplo, o cliente vai se conectar com o servidor no IP ```127.168.99.1```
 # Passos futuros
 
 1. Atualizar a versão do python
-2. Identificar e corrigir o bug no cliente que trava o jogo pela metade
-    1. suspeito que uma fila corrija
-    2. ou uma mudança no protocolo
+2. Verificar a possibilidade de trocar de biblioteca de interface
+    - Se for possível e valer a pena, refazer completamente a interface
+    - Se não for possível ou não valer a pena:
+        - Identificar e corrigir o bug no cliente que trava o jogo pela metade
+            1. suspeito que uma fila corrija
+            2. ou uma mudança no protocolo
+        - Melhorar a qualidade de código do cliente
 3. Alterar fila utilizada no servidor
     1. usar a fila do python para multithread
 4. Adicionar uma verificação de prontidão
     1. Após achar a partida, clientes devem confirmar que estão prontos para iniciar
-5. Refazer completamente a interface
-    1. Verificar a possibilidade de trocar de biblioteca
+5. Adicionar um botão ao final da partida para entrar novamente na fila
+6. Adicionar um histórico de partidas
+7. Identificar quando um cliente 'quita' de uma partida
+    1. Adicionar uma mensagem de alerta pro cliente "Deseja realmente sair?"
